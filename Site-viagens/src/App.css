@@ -1,0 +1,52 @@
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+.app h1 {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+  color: #111;
+}
+
+.app p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e5e4e7;
+  margin: 24px 0 32px;
+}
+
+/* Botoes de navegação do rodape */
+nav .botoes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+nav .botoes button {
+  width: 28px;
+  height: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #e0e0e0;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+nav .botoes button.ativo,
+nav .botoes button:hover {
+  background: #000000;
+  border-color: #000000;
+  width: 36px;
+}
