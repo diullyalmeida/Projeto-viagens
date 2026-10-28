@@ -100,14 +100,14 @@
   display: flex;
   gap: 30px;
   background: #ffffff;
-  padding: 24px;
+  padding: 28px;
   border-radius: 16px;
   border: 1px solid #e2e8f0;
 }
 
 .detalhes-img {
   width: 400px;
-  height: 280px;
+  height: 320px;
   object-fit: cover;
   border-radius: 12px;
 }
@@ -117,11 +117,32 @@
   font-size: 28px;
 }
 
+.valores-bloco {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 12px;
+  background: #f8fafc;
+  padding: 12px;
+  border-radius: 8px;
+}
+
 .detalhes-preco {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   color: #8b5cf6;
-  margin-bottom: 12px;
+}
+
+.detalhes-preco small {
+  font-size: 12px;
+  color: #64748b;
+  font-weight: normal;
+}
+
+.detalhes-diaria,
+.detalhes-duracao {
+  font-size: 13px;
+  color: #475569;
 }
 
 .detalhes-descricao {
@@ -130,9 +151,30 @@
   margin-bottom: 16px;
 }
 
+.incluso-bloco {
+  margin-bottom: 16px;
+}
+
+.incluso-bloco h3,
 .detalhes-info h3 {
-  font-size: 15px;
+  font-size: 14px;
   margin-bottom: 8px;
+  color: #1e293b;
+}
+
+.incluso-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.incluso-item {
+  font-size: 12px;
+  background-color: #f1f5f9;
+  padding: 6px 10px;
+  border-radius: 6px;
+  color: #334155;
+  font-weight: 500;
 }
 
 .detalhes-info ul {
@@ -151,10 +193,11 @@
   background-color: #8b5cf6;
   color: #fff;
   border: none;
-  padding: 10px 20px;
+  padding: 12px 24px;
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
+  font-size: 14px;
 }
 
 .checkout-section {
@@ -194,7 +237,7 @@
   left: 0;
   right: 0;
   padding: 20px 24px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
   color: #ffffff;
 }
 
@@ -217,10 +260,21 @@
   color: #ffffff;
 }
 
-.checkout-preco-tag {
-  margin: 4px 0 0 0;
-  font-size: 15px;
-  font-weight: 600;
+.checkout-precos-resumo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.preco-destaque {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.diaria-tag {
+  font-size: 13px;
   color: #ddd6fe;
 }
 
@@ -228,9 +282,20 @@
   padding: 28px;
 }
 
+.resumo-pacote-box {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 12px;
+  color: #475569;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
 .checkout-body h3 {
-  margin: 0 0 20px 0;
-  font-size: 16px;
+  margin: 0 0 16px 0;
+  font-size: 15px;
   color: #1e293b;
 }
 
@@ -258,7 +323,8 @@
   color: #475569;
 }
 
-.form-group input {
+.form-group input,
+.form-group select {
   padding: 11px 14px;
   border: 1px solid #cbd5e1;
   border-radius: 8px;
@@ -267,7 +333,8 @@
   background-color: #f8fafc;
 }
 
-.form-group input:focus {
+.form-group input:focus,
+.form-group select:focus {
   border-color: #8b5cf6;
   background-color: #ffffff;
 }
